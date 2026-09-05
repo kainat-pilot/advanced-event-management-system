@@ -8,19 +8,174 @@ business:"https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&
 workshop:"https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
 sports:"https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80"
 };
-const seedEvents=[
-{id:"EVT-1001",name:"Future Forward Tech Conference",date:"2026-10-18",time:"10:00 AM",location:"Lahore",category:"Technology",price:4500,seats:180,status:"Upcoming",image:IMG.tech,description:"A full-day technology conference bringing developers, founders and digital innovators together for practical talks, networking and future-focused ideas."},
-{id:"EVT-1002",name:"Soundscape Live",date:"2026-10-24",time:"7:30 PM",location:"Islamabad",category:"Music",price:3000,seats:90,status:"Upcoming",image:IMG.music,description:"An immersive live music evening featuring emerging artists, energetic performances and a memorable festival-style atmosphere."},
-{id:"EVT-1003",name:"Startup Growth Summit",date:"2026-11-02",time:"9:00 AM",location:"Karachi",category:"Business",price:5500,seats:120,status:"Upcoming",image:"https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80",description:"Meet entrepreneurs, investors and business leaders at a practical summit focused on growth, product strategy and sustainable ventures."},
-{id:"EVT-1004",name:"UI/UX Design Masterclass",date:"2026-10-10",time:"11:00 AM",location:"Lahore",category:"Workshop",price:2200,seats:45,status:"Upcoming",image:IMG.workshop,description:"A hands-on design workshop covering user research, wireframes, visual systems and portfolio-ready interface design."},
-{id:"EVT-1005",name:"Digital Leaders Forum",date:"2026-09-28",time:"2:00 PM",location:"Multan",category:"Business",price:1800,seats:75,status:"Upcoming",image:"https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",description:"A focused forum for digital professionals to share practical strategies, leadership lessons and modern workplace trends."},
-{id:"EVT-1006",name:"Code & Coffee Meetup",date:"2026-09-20",time:"4:00 PM",location:"Lahore",category:"Technology",price:800,seats:60,status:"Upcoming",image:IMG.tech,description:"A friendly developer meetup with short talks, coding conversations and networking over coffee."},
-{id:"EVT-1007",name:"City Night Run",date:"2026-10-05",time:"6:00 AM",location:"Islamabad",category:"Sports",price:1200,seats:240,status:"Upcoming",image:IMG.sports,description:"Start your morning with a professionally organized city run, community energy and a healthy challenge."},
-{id:"EVT-1008",name:"Creative Makers Lab",date:"2026-11-15",time:"1:00 PM",location:"Karachi",category:"Workshop",price:2600,seats:35,status:"Upcoming",image:IMG.workshop,description:"Explore creative problem solving and hands-on making techniques in a collaborative workshop."},
-{id:"EVT-1009",name:"Indie Beats Festival",date:"2026-12-01",time:"5:30 PM",location:"Lahore",category:"Music",price:3800,seats:200,status:"Upcoming",image:IMG.music,description:"A celebration of independent music with multiple performers, food and a vibrant evening crowd."},
-{id:"EVT-1010",name:"AI & Business Breakfast",date:"2026-10-29",time:"8:30 AM",location:"Islamabad",category:"Technology",price:3500,seats:55,status:"Upcoming",image:IMG.tech,description:"A concise executive session on practical AI adoption, automation and responsible digital transformation."},
-{id:"EVT-1011",name:"Women in Business Meetup",date:"2026-09-25",time:"3:00 PM",location:"Multan",category:"Business",price:1500,seats:85,status:"Upcoming",image:IMG.business,description:"A networking meetup focused on entrepreneurship, career growth, mentorship and meaningful professional connections."},
-{id:"EVT-1012",name:"Photography Walk",date:"2026-10-14",time:"7:00 AM",location:"Lahore",category:"Workshop",price:1000,seats:28,status:"Upcoming",image:IMG.workshop,description:"Learn practical street photography techniques during a guided city walk designed for beginners and enthusiasts."}
+const seedEvents = [
+    {
+        id: "EVT-1001",
+        name: "Future Forward Tech Conference",
+        date: "2026-10-18",
+        time: "10:00 AM",
+        location: "Lahore",
+        category: "Technology",
+        price: 4500,
+        seats: 180,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=80",
+        description: "A full-day technology conference bringing developers, founders and digital innovators together for practical talks, networking and future-focused ideas."
+    },
+
+    {
+        id: "EVT-1002",
+        name: "Soundscape Live",
+        date: "2026-10-24",
+        time: "7:30 PM",
+        location: "Islamabad",
+        category: "Music",
+        price: 3000,
+        seats: 90,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80",
+        description: "An immersive live music evening featuring emerging artists, energetic performances and a memorable festival-style atmosphere."
+    },
+
+    {
+        id: "EVT-1003",
+        name: "Startup Growth Summit",
+        date: "2026-11-02",
+        time: "9:00 AM",
+        location: "Karachi",
+        category: "Business",
+        price: 5500,
+        seats: 120,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80",
+        description: "Meet entrepreneurs, investors and business leaders at a practical summit focused on growth, product strategy and sustainable ventures."
+    },
+
+    {
+        id: "EVT-1004",
+        name: "UI/UX Design Masterclass",
+        date: "2026-10-10",
+        time: "11:00 AM",
+        location: "Lahore",
+        category: "Workshop",
+        price: 2200,
+        seats: 45,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
+        description: "A hands-on design workshop covering user research, wireframes, visual systems and portfolio-ready interface design."
+    },
+
+    {
+        id: "EVT-1005",
+        name: "Digital Leaders Forum",
+        date: "2026-09-28",
+        time: "2:00 PM",
+        location: "Multan",
+        category: "Business",
+        price: 1800,
+        seats: 75,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+        description: "A focused forum for digital professionals to share practical strategies, leadership lessons and modern workplace trends."
+    },
+
+    {
+        id: "EVT-1006",
+        name: "Code & Coffee Meetup",
+        date: "2026-09-20",
+        time: "4:00 PM",
+        location: "Lahore",
+        category: "Technology",
+        price: 800,
+        seats: 60,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
+        description: "A friendly developer meetup with short talks, coding conversations and networking over coffee."
+    },
+
+    {
+        id: "EVT-1007",
+        name: "City Night Run",
+        date: "2026-10-05",
+        time: "6:00 AM",
+        location: "Islamabad",
+        category: "Sports",
+        price: 1200,
+        seats: 240,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=900&q=80",
+        description: "Start your morning with a professionally organized city run, community energy and a healthy challenge."
+    },
+
+    {
+        id: "EVT-1008",
+        name: "Creative Makers Lab",
+        date: "2026-11-15",
+        time: "1:00 PM",
+        location: "Karachi",
+        category: "Workshop",
+        price: 2600,
+        seats: 35,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
+        description: "Explore creative problem solving and hands-on making techniques in a collaborative workshop."
+    },
+
+    {
+        id: "EVT-1009",
+        name: "Indie Beats Festival",
+        date: "2026-12-01",
+        time: "5:30 PM",
+        location: "Lahore",
+        category: "Music",
+        price: 3800,
+        seats: 200,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80",
+        description: "A celebration of independent music with multiple performers, food and a vibrant evening crowd."
+    },
+
+    {
+        id: "EVT-1010",
+        name: "AI & Business Breakfast",
+        date: "2026-10-29",
+        time: "8:30 AM",
+        location: "Islamabad",
+        category: "Technology",
+        price: 3500,
+        seats: 55,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80",
+        description: "A concise executive session on practical AI adoption, automation and responsible digital transformation."
+    },
+
+    {
+        id: "EVT-1011",
+        name: "Women in Business Meetup",
+        date: "2026-09-25",
+        time: "3:00 PM",
+        location: "Multan",
+        category: "Business",
+        price: 1500,
+        seats: 85,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=80",
+        description: "A networking meetup focused on entrepreneurship, career growth, mentorship and meaningful professional connections."
+    },
+
+    {
+        id: "EVT-1012",
+        name: "Photography Walk",
+        date: "2026-10-14",
+        time: "7:00 AM",
+        location: "Lahore",
+        category: "Workshop",
+        price: 1000,
+        seats: 28,
+        status: "Upcoming",
+        image: "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&fit=crop&w=900&q=80",
+        description: "Learn practical street photography techniques during a guided city walk designed for beginners and enthusiasts."
+    }
 ];
 function read(key,fallback=[]){try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}}
 function write(key,value){localStorage.setItem(key,JSON.stringify(value))}
