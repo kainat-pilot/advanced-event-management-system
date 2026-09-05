@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evently | Admin Panel</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin">
+<div class="admin-layout">
+<aside class="sidebar">
+<a class="brand" href="index.html"><span class="brand-mark">E</span><span>Evently</span></a>
+<div class="admin-label">ADMIN CONSOLE</div>
+<nav class="sidebar-nav">
+<button class="side-link active" data-tab="dashboard">▦ <span>Dashboard</span></button>
+<button class="side-link" data-tab="events">◫ <span>Events</span></button>
+<button class="side-link" data-tab="bookings">▣ <span>Bookings</span></button>
+<button class="side-link" data-tab="customers">♙ <span>Customers</span></button>
+<button class="side-link" data-tab="reports">◒ <span>Reports</span></button>
+<button class="side-link" data-tab="settings">⚙ <span>Settings</span></button>
+</nav>
+<a class="back-site" href="index.html">← Back to website</a>
+</aside>
+<main class="admin-main">
+<header class="admin-topbar"><div><button class="mobile-menu" id="mobileAdminMenu">☰</button><span class="eyebrow">ADMINISTRATION</span><h1 id="adminPageTitle">Dashboard</h1></div>
+<div class="header-actions"><button class="icon-btn" id="themeToggle">◐</button></div></header>
+<div id="adminContent"></div>
+</main></div>
+<div id="modalRoot"></div><div id="toastContainer" class="toast-container"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

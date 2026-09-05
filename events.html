@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evently | Events</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="events">
+<header class="site-header">
+<a class="brand" href="index.html"><span class="brand-mark">E</span><span>Evently</span></a>
+<nav class="main-nav"><a href="index.html">Home</a><a class="active" href="events.html">Events</a><a href="bookings.html">My Bookings</a><a href="admin.html">Admin</a></nav>
+<div class="header-actions"><button class="icon-btn" id="themeToggle">◐</button></div>
+</header>
+<main class="page-wrap">
+<section class="page-title"><div><span class="eyebrow">EVENT DIRECTORY</span><h1>Find your next experience</h1><p>Search, filter and sort all available events.</p></div></section>
+<section class="filter-panel">
+<div class="search-wrap"><span>⌕</span><input id="eventSearch" type="search" placeholder="Search event name, location..."></div>
+<select id="categoryFilter"><option value="">All categories</option><option>Music</option><option>Technology</option><option>Business</option><option>Workshop</option><option>Sports</option></select>
+<select id="locationFilter"><option value="">All locations</option><option>Lahore</option><option>Islamabad</option><option>Karachi</option><option>Multan</option></select>
+<select id="seatFilter"><option value="">Any seats</option><option value="10">10+ seats</option><option value="50">50+ seats</option><option value="100">100+ seats</option></select>
+<div class="price-range"><label>Max PKR <output id="priceOutput">10000</output></label><input id="priceFilter" type="range" min="500" max="10000" step="500" value="10000"></div>
+<button id="resetFilters" class="btn btn-ghost">Reset</button>
+</section>
+<div class="list-toolbar"><span id="resultCount">0 events</span><select id="sortEvents"><option value="date-asc">Date: Soonest</option><option value="date-desc">Date: Latest</option><option value="name-asc">Name: A–Z</option><option value="price-asc">Price: Low–High</option><option value="price-desc">Price: High–Low</option></select></div>
+<div id="eventsGrid" class="event-grid"></div>
+<div id="eventsPagination" class="pagination"></div>
+</main>
+<div id="toastContainer" class="toast-container"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Evently Advanced Event Management System">
+<title>Evently | Discover Events</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">E</span><span>Evently</span></a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a class="active" href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="bookings.html">My Bookings</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" id="themeToggle" title="Toggle dark mode">◐</button>
+    <a class="btn btn-primary btn-sm" href="events.html">Explore Events</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">DISCOVER • BOOK • EXPERIENCE</span>
+    <h1>Make every event<br><span>worth remembering.</span></h1>
+    <p>Find concerts, conferences, workshops and experiences. Choose your seats and book securely in minutes.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="events.html">Explore Events →</a>
+      <a class="btn btn-ghost" href="bookings.html">My Bookings</a>
+    </div>
+    <div class="hero-stats">
+      <div><strong id="homeEventCount">0</strong><span>Live Events</span></div>
+      <div><strong id="homeBookingCount">0</strong><span>Bookings</span></div>
+      <div><strong>98%</strong><span>Happy Guests</span></div>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="floating-card fc-top"><span>●</span> 2,500+ attendees</div>
+    <div class="event-poster">
+      <div class="poster-glow"></div>
+      <span class="poster-tag">FEATURED</span>
+      <h3>Future<br>Forward</h3>
+      <p>TECH CONFERENCE • 2026</p>
+      <div class="poster-line"></div>
+      <strong>OCT 18 · LAHORE</strong>
+    </div>
+    <div class="floating-card fc-bottom">★★★★★ <b>4.9</b><br><small>Guest experience</small></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <div><span class="eyebrow">DON'T MISS OUT</span><h2>Featured events</h2></div>
+    <a href="events.html" class="text-link">View all events →</a>
+  </div>
+  <div id="featuredEvents" class="event-grid"></div>
+</section>
+
+<section class="category-strip section">
+  <div class="section-heading"><div><span class="eyebrow">EXPLORE</span><h2>Browse by category</h2></div></div>
+  <div class="category-grid">
+    <a href="events.html?category=Music" class="category-card"><span>♫</span><b>Music</b><small>Concerts & festivals</small></a>
+    <a href="events.html?category=Technology" class="category-card"><span>⌘</span><b>Technology</b><small>Conferences & talks</small></a>
+    <a href="events.html?category=Business" class="category-card"><span>↗</span><b>Business</b><small>Networking & summits</small></a>
+    <a href="events.html?category=Workshop" class="category-card"><span>✦</span><b>Workshops</b><small>Learn something new</small></a>
+  </div>
+</section>
+</main>
+<footer class="footer"><span>© 2026 Evently</span><span>Advanced Event Management System</span></footer>
+<div id="toastContainer" class="toast-container"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
